@@ -1,7 +1,7 @@
 # 📋 TAREA 11 - DOMINÓ CON HILOS 📋
 
 
-Simulación del **efecto dominó** utilizando hilos en Java. Cada hilo simula una ficha que derriba a la siguiente, esperando a que toda la cadena termine antes de considerarse finalizada.
+> **ℹ️ Nota** Simulación del **efecto dominó** utilizando hilos en Java. Cada hilo simula una ficha que derriba a la siguiente, esperando a que toda la cadena termine antes de considerarse finalizada.
 
 ---
 
@@ -24,5 +24,5 @@ Simulación del **efecto dominó** utilizando hilos en Java. Cada hilo simula un
 ## 💻 CLASES ( TODAS LAS CLASES ESTÁN COMENTADAS PARA ENTENDER EL FUNCIONAMIENTO DE CADA BLOQUE DE CÓDIGO )
 ---
 - `Domino.java`: Clase principal. Gestiona la entrada del usuario, crea la cadena de hilos y realiza la monitorización.
-- `Fichita.java`: Clase que representa cada "ficha de dominó". Extiende `Thread` y define el comportamiento de cada hilo según el enunciado.
+- `Fichita.java`: Clase que representa las "fichas del dominó". Extiende Thread y define el comportamiento de cada hilo.
 ---
