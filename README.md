@@ -1,8 +1,12 @@
 # 📋 TAREA 11 - DOMINÓ CON HILOS 📋
 
+
 Simulación del **efecto dominó** utilizando hilos en Java. Cada hilo simula una ficha que derriba a la siguiente, esperando a que toda la cadena termine antes de considerarse finalizada.
+
 ---
+
 ![GIF](https://i.pinimg.com/originals/5b/40/d7/5b40d7b8c626e62a663c3b0e719b0329.gif)
+
 ---
 ## DESCRIPCIÓN
 
