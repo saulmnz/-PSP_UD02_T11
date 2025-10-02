@@ -21,7 +21,6 @@
 
 
 ## 💻 CLASES ( TODAS LAS CLASES ESTÁN COMENTADAS PARA ENTENDER EL FUNCIONAMIENTO DE CADA BLOQUE DE CÓDIGO )
----
 - `Domino.java`: Clase principal. Gestiona la entrada del usuario, crea la cadena de hilos y realiza la monitorización.
 - `Fichita.java`: Clase que representa las "fichas del dominó". Extiende Thread y define el comportamiento de cada hilo.
 ---
