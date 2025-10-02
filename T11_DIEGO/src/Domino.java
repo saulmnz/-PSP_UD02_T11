@@ -28,7 +28,26 @@ public class Domino {
 
         // último hilo creado, primero en la cadena (Hilo-1)
         if (siguiente != null) {
+            // tiempo desde que se lanza el primer hilo
+            long inicio = System.currentTimeMillis();
             siguiente.start();
+
+            // hilo principal vigila al primer hilo mientras este siga vivo
+            while (siguiente.isAlive()) {
+                System.out.println("[Control Central] Vigilando a " + siguiente.getName() + "... sigue activo.");
+                try {
+                    // comprobación cada cierto tiempo
+                    Thread.sleep(300);
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                    break;
+                }
+            }
+
+            // impresión del informe tras la ejecución completa
+            long fin = System.currentTimeMillis();
+            System.out.println("[Control Central] " + siguiente.getName() + " ha terminado.");
+            System.out.println("Tiempo total de la caída: " + (fin - inicio) + " ms");
         }
     }
 }
